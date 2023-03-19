@@ -18,7 +18,7 @@ main{
     grid-template-columns: auto auto auto auto;
     grid-template-areas: "c1 c1 c2 c5"
                          "c3 c4 c4 c5";
-    margin: 8rem;
+    margin: 5rem;
     width: 82rem;
 }
 
