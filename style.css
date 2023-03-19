@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(0, 0%, 81%);
+    align-items: center;
+    justify-content: center;
+}
+
+.all-card{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-areas: "c1 c1 c2 c5"
+                         "c3 c4 c4 c5";
+    margin: 8rem;
+    width: 82rem;
+}
+
+.c{
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.card-1{
+    background-color: hsl(263, 55%, 52%);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% top;
+    grid-area: c1;
+    margin: 0 2rem 2rem 0;
+    max-width: 36rem;
+    max-height: 18rem;
+}
+.c-it{
+    display: flex;
+    align-items: center;
+}
+.c-it img{
+    width: 2.813rem;
+    border-radius: 50%;
+}
+.c-it .s{border: 2px solid #ecf2f880;}
+.c-it .p{border: 2px solid #7541c880;}
+
+.c-t{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+.c-t h3{
+    color: hsl(210deg 46% 95%);
+    margin-bottom: 0;
+    font-weight: 500;
+}
+.c-t p{
+    margin-top: 0;
+    color: hsl(210deg 46% 95% / 50%);
+}
+.c-t .g,.c-txt .g{color:#48556a;}
+.c-t .gp{color:#48556a80;}
+.c-txt h2{
+    color: #ecf2f8;
+    margin-top: 0;
+}
+.c-txt p{color:#ecf2f8b3;}
+.c-txt .gt{color: #48556ab3;}
+.card-2{
+    grid-area: c2;
+    background-color: hsl(217, 19%, 35%);
+    margin: 0 2rem 2rem 0;
+    max-width: 15rem;
+    max-height: 18rem;
+}
+.card-3{
+    grid-area: c3;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 14rem;
+    max-height: 18rem;
+}
+.card-4{
+    grid-area: c4;
+    background-color: hsl(219, 29%, 14%);
+    max-width: 36rem;
+    margin-left: 2rem;
+}
+.card-5{
+    grid-area: c5;
+    background-color: hsl(0, 0%, 100%);
+    max-width: 15rem;
+}
+
+.attribution { 
+    font-size:1.1rem; 
+    text-align: center;
+    margin-top: 2rem;
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media all and (max-width:1340px){
+    main{
+        padding: 2rem;
+    }
+    .all-card{
+        grid-template-columns: auto;
+        grid-template-areas: "c1"
+                             "c2"
+                             "c3"
+                             "c4"
+                             "c5";
+        width: 100%;
+        margin: 2rem 8rem;
+    }
+    .c{
+        margin: 0;
+        margin-bottom: 2rem;
+        max-height: 100rem;
+        max-width: 74rem;
+    }
+}
+@media all and (max-width:750px){
+    .c{
+        font-size: 0.8rem;
+    }
+}
